@@ -1,5 +1,7 @@
 # describe-image
 
+This is a simple image generator built with `Node.js`, `Express` ans `ReactJs` that uses <a href="https://beta.openai.com/docs/guides/images">OpenAI's Dall-E models</a> to generate images.
+
 <img src="./client/public/screen.png">
 
 # usage

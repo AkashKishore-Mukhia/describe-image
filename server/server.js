@@ -24,7 +24,7 @@ app.use(express.urlencoded({extends: false}))
 app.use('/openai', require('./routes/openaiRoutes.js'));
 
 app.use('/', (req, res) => {
-  res.send({message: 'this root get is woriking fine'});
+  return res.send({message: 'this root get is woriking fine'});
 })
 
 app.listen(process.env.PORT || port, () => {

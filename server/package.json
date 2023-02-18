@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "cd server/ && echo -e \"OPENAI_API_KEY = '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'\" > .env",
+    "build": "echo -e \"OPENAI_API_KEY = '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'\" > .env",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js"
   },

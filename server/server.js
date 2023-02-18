@@ -23,7 +23,7 @@ app.use(express.urlencoded({extends: false}))
 // router for /openai/createImage;
 app.use('/openai', require('./routes/openaiRoutes.js'));
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   return res.send({message: 'this root get is woriking fine'});
 })
 

@@ -1,5 +1,7 @@
 # describe-image
 
+This is a simple image generator built with `Node.js`, `Express` ans `ReactJs` that uses <a href="https://beta.openai.com/docs/guides/images">OpenAI's Dall-E models</a> to generate images.
+
 <img src="./client/public/screen.png">
 
 # usage
@@ -19,3 +21,13 @@ npm run server
 then visit `http://localhost:4000/` in you browser.
 
 The endpoint is at `POST http://localhost:4000/openai/create-image`.
+
+
+# generate image
+<img src="./client/public/search.png">
+
+1. describe the image you want to generate.
+2. select the size of the images `(small, medium, large)`
+3. input number of images you want by the range input slider `between 1 to 5` `(default is set to 1)`.
+
+Finally hit `Generate` button.

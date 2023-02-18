@@ -7,7 +7,7 @@ const port = process.env.PORT || 4000;
 const app = express();
 
 const corsOptions = {
-  origin: 'https://long-pear-turtle-tam.cyclic.app/',
+  origin: 'http://localhost:3000',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 

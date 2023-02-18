@@ -8,7 +8,7 @@ const app = express();
 
 // middlewares
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: '*',
 }))
 
 app.use((req, res, next) => {

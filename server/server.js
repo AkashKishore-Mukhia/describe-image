@@ -27,6 +27,6 @@ app.use('/', (req, res) => {
   res.send({message: 'this root get is woriking fine'});
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`server is listening on port ${port}`);
 })

@@ -35,8 +35,8 @@ function UpperContainer({getData}) {
   return (
     <div>
       <form className='form' onSubmit={handleSubmit}>
-        <h1>Describe an Image</h1>
-        <input placeholder='image description' type={'text'} name="description" value={form.description} className='image-description' onChange={handleChange}></input><br />
+        <h1>Describe Image</h1>
+        <input placeholder='Please describe image' type={'text'} name="description" value={form.description} className='description-input-box' onChange={handleChange} required></input><br />
         <select className='select' name='size' value={form.size} onChange={handleChange}>
           <option value={'small'}>small</option>
           <option value={'medium'}>medium</option>

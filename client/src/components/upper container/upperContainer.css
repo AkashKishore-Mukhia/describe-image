@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(219, 218, 218);
+  /* background-color: #E6E4AE; */
+  background-color: #F3DFA6;
 }
 
 .form {
@@ -10,7 +11,7 @@ body {
   justify-content: center;
   height: 50vh;
   /* background-color: #10a37f; */
-  background-color: #70706a;
+  /* background-color: #70706a; */
 
 }
 
@@ -19,27 +20,42 @@ body {
   width: 60%;
   border-radius: 30px;
   text-align: center;
+  border: 1px solid black;
 }
 
 .form > button {
   border-radius: 50px;
+  font-family: monospace;
   cursor: pointer;
-  font-weight: bolder;
-  font-size: large;
-  color: white;
-  background-color: rgb(231, 182, 47);
-  border: none;
+  font-size: x-large;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 15%;
 }
 
 .form > h1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: rgb(30, 28, 28);
+  font-family: cursive, system-ui;
+  color: #170B2E;
+  font-size: xxx-large;
 }
 
-.image-describe, .select {
+.description-input-box{
+  font-size: large;
+}
+
+.select {
+  font-family: monospace;
   font-weight: bold;
+  font-size: x-large;
 }
 
 .form > button:hover {
   border: 2px solid black;
+}
+
+
+.btn-generate:hover {
+  background-color:black;
+  color: white;
 }

@@ -2,9 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
   "scripts": {
-    "build": "echo -e \"OPENAI_API_KEY = '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'\n\n'PORT = 4000'\" > .env",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },

@@ -3,7 +3,7 @@ const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
 
-const port = 4000;
+const PORT = 4000;
 const app = express();
 
 // middlewares
@@ -18,7 +18,7 @@ app.use((req, res, next) => {
   next()
 }) 
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(express.urlencoded({extends: false}))
 // router for /openai/createImage;
 app.use('/openai', require('./routes/openaiRoutes.js'));
@@ -27,6 +27,6 @@ app.get('/', (req, res) => {
   return res.send({message: 'this root get is woriking fine'});
 })
 
-app.listen(process.env.PORT || port, () => {
-  console.log(`server is listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`server is listening`);
 })

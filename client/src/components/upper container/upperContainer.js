@@ -16,7 +16,7 @@ function UpperContainer({getData}) {
     e.preventDefault();
     setWait('please wait...')
 
-    const response = await fetch('https://long-pear-turtle-tam.cyclic.app/openai/createImage', {
+    const response = await fetch('https://http://localhost:3000/openai/createImage', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(form)

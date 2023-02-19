@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    // "build": "echo -e \"OPENAI_API_KEY = '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'\" > .env",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "server": "nodemon server.js"

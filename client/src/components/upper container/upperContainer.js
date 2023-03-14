@@ -16,7 +16,7 @@ function UpperContainer({getData}) {
     e.preventDefault();
     setWait('please wait...')
 
-    const response = await fetch('http://localhost:4000/openai/createImage', {
+    const response = await fetch('https://red-violet-whale-tie.cyclic.app/openai/createImage', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(form)

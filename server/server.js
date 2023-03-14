@@ -27,6 +27,6 @@ app.get('/', (req, res) => {
   return res.send({message: 'this root get is woriking fine'});
 })
 
-app.listen(PORT, () => {
+app.listen(PORT || 4000, () => {
   console.log(`server is listening`);
 })

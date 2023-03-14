@@ -7,17 +7,17 @@ const PORT = process.env.port;
 const app = express();
 
 // middlewares
-app.use(cors({
-  origin: 'https://describe-image.pages.dev',
-}))
+// app.use(cors({
+//   origin: 'https://describe-image.pages.dev',
+// }))
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://describe-image.pages.dev')
-  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE')
-  res.header('Access-Control-Allow-Headers', 'Content-Type')
-  next()
-}) 
-
+// app.use((req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', 'https://describe-image.pages.dev')
+//   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE')
+//   res.header('Access-Control-Allow-Headers', 'Content-Type')
+//   next()
+// }) 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extends: false}))
 // router for /openai/createImage;

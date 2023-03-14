@@ -8,11 +8,11 @@ const app = express();
 
 // middlewares
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://describe-image.pages.dev',
 }))
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
+  res.header('Access-Control-Allow-Origin', 'https://describe-image.pages.dev')
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE')
   res.header('Access-Control-Allow-Headers', 'Content-Type')
   next()
